@@ -1,22 +1,29 @@
 /*
- * Copyright (C) 2021 Inria
- *
- * This file is subject to the terms and conditions of the GNU Lesser
- * General Public License v2.1. See the file LICENSE in the top level
- * directory for more details.
- */
 
+Copyright (C) 2024 Ahmad Mahmod <mahmod@unistra.fr>
+*
+*/
 /**
- * @defgroup    sched_rbpf rbpf scheduler hook
- * @ingroup     sys
- *
- * @{
- *
- * @file
- * @brief       Scheduler rbpf callback
- *
- * @author      Koen Zandberg <koen@bergzand.net>
- */
+
+@defgroup FCs hook for handiling UDP packets
+@ingroup sys
+@brief Provides hooking for FCs in the system for UDP
+*
+
+The lib aims to enable the installation and initilization of the UDP send and recv hooks using FCs.
+*
+
+@{
+*
+
+@file
+
+@brief Femto Containers (FCs) hooking for UDP
+*
+
+@author Ahmad Mahmod <mahmod@unistra.fr>
+*/
+
 
 #ifndef UDP_FC_HOOK
 #define UDP_FC_HOOK
