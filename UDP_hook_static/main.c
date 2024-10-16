@@ -1,19 +1,16 @@
 /*
- * Copyright (c) 2021 Koen Zandberg
- *
- * This file is subject to the terms and conditions of the GNU Lesser
- * General Public License v2.1. See the file LICENSE in the top level
- * directory for more details.
+ * Copyright (c) 2024 Ahmad Mahmod <https://ahmahmod.github.io/>
+
  */
 
 /**
- * @ingroup     examples
+ * @ingroup     UDP
  * @{
  *
  * @file
- * @brief       BPF tutorial 1 example
+ * @brief       UDP using FCs
  *
- * @author      Koen Zandberg <koen.zandberg@inria.fr>
+ * @author     Ahmad Mahmod <https://ahmahmod.github.io/>
  *
  * @}
  */
