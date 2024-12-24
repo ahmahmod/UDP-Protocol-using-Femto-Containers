@@ -75,14 +75,13 @@ uint32_t rec(gnrc_pktsnip_t *pkt)
     /* get explicit pointer to UDP header */
     hdr = (udp_hdr_t *)(uintptr_t)bpf_gnrc_pktsnip_get_data(udp);
     
-    /*
+    /* check the checksum*/
     if (hdr!=NULL){
         if ((bpf_gnrc_pktsnip_get_udp_hcsum(hdr) == 0) || ((uint16_t)(uintptr_t) bpf_calc_csum(udp, ipv6, pkt) != 0xFFFF)) {
             bpf_gnrc_pktbuf_release_static(pkt);
             return ERROR;
         }
     }
-    */
 
     /* send the packet to the proper port*/
     if (hdr!=NULL && pkt!=NULL){
